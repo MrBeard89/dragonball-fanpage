@@ -25,11 +25,10 @@ const Navbar = () => {
             <Link to='/'>
               <li className='link'>Home</li>
             </Link>
-
             <Link to='#'>
-              <li className='link'>Goku's Forms</li>
+              <li className='link'>Goku Forms</li>
             </Link>
-            <Link to='#'>
+            <Link to='/comics'>
               <li className='link'>Comics</li>
             </Link>
             <Link to='#'>
