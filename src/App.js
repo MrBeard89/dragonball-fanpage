@@ -2,7 +2,8 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Contact from './components/Contact'
-import Comics from './components/Comics'
+import News from './components/News'
+import GokuForms from './components/GokuForms'
 import Footer from './components/Footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -14,7 +15,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/comics' element={<Comics />} />
+          <Route path='/news' element={<News />} />
+          <Route path='/gokuforms' element={<GokuForms />} />
         </Routes>
         <Footer />
       </BrowserRouter>
