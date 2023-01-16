@@ -12,7 +12,91 @@ const Comics = () => {
   return (
     <>
       <div className='comics_container'>
-        <div></div>
+        <div className='dbz_cont'>
+          <img
+            className='dbz_img'
+            src={Dbz}
+            alt='dbz book cover'
+            name='dbz'
+          ></img>
+          <div className='dbz_text_cont'>
+            <label className='dbz_label' for='dbz'>
+              Games
+            </label>
+            <p className='dbz_text'>
+              DRAGON BALL Z: KAKAROT's Fourth DLC Is Almost Here! Watch the
+              Launch Trailer Now!
+            </p>
+          </div>
+        </div>
+        <div className='battle_cont'>
+          <img
+            className='battle_img'
+            src={Battle}
+            alt='battle book cover'
+            name='battle'
+          ></img>
+          <div className='battle_text_cont'>
+            <label className='battle_label' for='dbz'>
+              Games
+            </label>
+            <p className='battle_text'>
+              DRAGON BALL Z: KAKAROT's Fourth DLC Is Almost Here! Watch the
+              Launch Trailer Now!
+            </p>
+          </div>
+        </div>
+        <div className='dbz_cont'>
+          <img
+            className='dbz_img'
+            src={Dbz}
+            alt='dbz book cover'
+            name='dbz'
+          ></img>
+          <div className='dbz_text_cont'>
+            <label className='dbz_label' for='dbz'>
+              Games
+            </label>
+            <p className='dbz_text'>
+              DRAGON BALL Z: KAKAROT's Fourth DLC Is Almost Here! Watch the
+              Launch Trailer Now!
+            </p>
+          </div>
+        </div>
+        <div className='dbz_cont'>
+          <img
+            className='dbz_img'
+            src={Dbz}
+            alt='dbz book cover'
+            name='dbz'
+          ></img>
+          <div className='dbz_text_cont'>
+            <label className='dbz_label' for='dbz'>
+              Games
+            </label>
+            <p className='dbz_text'>
+              DRAGON BALL Z: KAKAROT's Fourth DLC Is Almost Here! Watch the
+              Launch Trailer Now!
+            </p>
+          </div>
+        </div>
+        <div className='dbz_cont'>
+          <img
+            className='dbz_img'
+            src={Dbz}
+            alt='dbz book cover'
+            name='dbz'
+          ></img>
+          <div className='dbz_text_cont'>
+            <label className='dbz_label' for='dbz'>
+              Games
+            </label>
+            <p className='dbz_text'>
+              DRAGON BALL Z: KAKAROT's Fourth DLC Is Almost Here! Watch the
+              Launch Trailer Now!
+            </p>
+          </div>
+        </div>
       </div>
     </>
   )

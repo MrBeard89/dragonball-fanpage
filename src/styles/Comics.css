@@ -1,3 +1,97 @@
 .comics_container {
+  font-family: 'Permanent Marker', cursive;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   height: 100vh;
+  width: 800px;
 }
+
+/* DBZ Container */
+.dbz_cont {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 5px solid #000;
+  box-shadow: 0px 2px 5px 5px #813210;
+}
+.dbz_cont:hover {
+  width: 400px;
+  height: 370px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 2px 12px 12px #813210;
+}
+.dbz_text_cont {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: -1rem;
+}
+.dbz_img {
+  width: 350px;
+}
+
+.dbz_label {
+  background-color: black;
+  color: #da531a;
+  width: fit-content;
+  padding: 0 5px;
+  border-radius: 8px;
+}
+.dbz_text {
+  width: 300px;
+  line-height: 1.1rem;
+}
+/* ************************* */
+
+/* Battle Container */
+.battle_cont {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 5px solid #000;
+  box-shadow: 0px 2px 5px 5px #813210;
+}
+.battle_cont:hover {
+  width: 400px;
+  height: 370px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 2px 12px 12px #813210;
+}
+.battle_text_cont {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: -1rem;
+}
+.battle_img {
+  width: 350px;
+}
+
+.battle_label {
+  background-color: black;
+  color: #da531a;
+  width: fit-content;
+  padding: 0 5px;
+  border-radius: 8px;
+}
+.battle_text {
+  width: 300px;
+  line-height: 1.1rem;
+}
+/* ************************* */
