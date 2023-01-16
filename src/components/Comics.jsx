@@ -37,7 +37,7 @@ const Comics = () => {
             name='battle'
           ></img>
           <div className='battle_text_cont'>
-            <label className='battle_label' for='dbz'>
+            <label className='battle_label' for='battle'>
               Games
             </label>
             <p className='battle_text'>
@@ -46,18 +46,18 @@ const Comics = () => {
             </p>
           </div>
         </div>
-        <div className='dbz_cont'>
+        <div className='heroes_cont'>
           <img
-            className='dbz_img'
-            src={Dbz}
-            alt='dbz book cover'
-            name='dbz'
+            className='heroes_img'
+            src={Heroes}
+            alt='heroes book cover'
+            name='heroes'
           ></img>
-          <div className='dbz_text_cont'>
-            <label className='dbz_label' for='dbz'>
+          <div className='heroes_text_cont'>
+            <label className='heroes_label' for='heroes'>
               Games
             </label>
-            <p className='dbz_text'>
+            <p className='heroes_text'>
               DRAGON BALL Z: KAKAROT's Fourth DLC Is Almost Here! Watch the
               Launch Trailer Now!
             </p>
