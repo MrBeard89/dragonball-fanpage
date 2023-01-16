@@ -63,18 +63,18 @@ const Comics = () => {
             </p>
           </div>
         </div>
-        <div className='dbz_cont'>
+        <div className='xeno_cont'>
           <img
-            className='dbz_img'
-            src={Dbz}
-            alt='dbz book cover'
-            name='dbz'
+            className='xeno_img'
+            src={Xeno}
+            alt='xeno book cover'
+            name='xeno'
           ></img>
-          <div className='dbz_text_cont'>
-            <label className='dbz_label' for='dbz'>
+          <div className='xeno_text_cont'>
+            <label className='xeno_label' for='xeno'>
               Games
             </label>
-            <p className='dbz_text'>
+            <p className='xeno_text'>
               DRAGON BALL Z: KAKAROT's Fourth DLC Is Almost Here! Watch the
               Launch Trailer Now!
             </p>
