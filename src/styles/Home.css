@@ -131,6 +131,9 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
+/* Keyframes */
+
 @keyframes fadeInAura {
   0% {
     opacity: 0;
@@ -175,4 +178,9 @@
   100% {
     transform: translateY(-2rem);
   }
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1400px) {
 }

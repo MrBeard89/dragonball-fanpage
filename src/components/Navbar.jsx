@@ -31,11 +31,12 @@ const Navbar = () => {
             <Link to='/news'>
               <li className='link'>News</li>
             </Link>
-            <Link to='#'>
-              <li className='link'>Upcoming Events</li>
-            </Link>
+
             <Link to='/contact'>
               <li className='link'>Contact</li>
+            </Link>
+            <Link to='/comingsoon'>
+              <li className='link'>Coming Soon</li>
             </Link>
           </ul>
           <div className='goku_logo_container'>

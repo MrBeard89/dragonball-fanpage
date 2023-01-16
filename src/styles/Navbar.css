@@ -173,6 +173,52 @@
   }
   /* Media Querie required -this is for desktop*/
   100% {
-    transform: translateX(calc(4vh * 100 / 2));
+    transform: translateX(95vw);
+  }
+}
+
+/* Media Queries for Cloud*/
+@media only screen and (max-width: 1800px) {
+  @keyframes cloudMove {
+    0% {
+      transform: translateX(-5rem);
+    }
+    /* Media Querie required -this is for desktop*/
+    100% {
+      transform: translateX(80vw);
+    }
+  }
+}
+@media only screen and (max-width: 1400px) {
+  @keyframes cloudMove {
+    0% {
+      transform: translateX(-5rem);
+    }
+
+    100% {
+      transform: translateX(75vw);
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  @keyframes cloudMove {
+    0% {
+      transform: translateX(-5rem);
+    }
+
+    100% {
+      transform: translateX(68vw);
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  @keyframes cloudMove {
+    0% {
+      transform: translateX(-5rem);
+    }
+
+    100% {
+      transform: translateX(50vw);
+    }
   }
 }
