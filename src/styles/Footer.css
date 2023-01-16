@@ -1,0 +1,119 @@
+.footer_container {
+  position: relative;
+  bottom: 0px;
+  height: 25rem;
+  width: 100vw;
+  background-color: #000;
+  color: #fff;
+  z-index: 3;
+}
+.capsule_corp_container {
+  position: relative;
+  z-index: 3;
+}
+.capsule_corp_img {
+  position: absolute;
+  top: -14rem;
+  left: 10px;
+  width: 400px;
+  height: 300px;
+}
+.footer_curly_img {
+  position: absolute;
+  top: -18rem;
+  left: -5.5rem;
+  transform: rotateZ(28deg);
+  z-index: 3;
+}
+.footer_curly_img_2 {
+  position: absolute;
+  top: -20rem;
+  left: -3rem;
+  transform: rotateZ(48deg);
+  width: 500px;
+  z-index: 3;
+}
+.footer_line {
+  position: absolute;
+  top: 1.5rem;
+  background-color: #fff;
+  width: 100vw;
+  height: 2rem;
+  transform: rotateZ(178deg);
+  z-index: 3;
+}
+
+.footer_links {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+  margin-left: 2rem;
+}
+
+.footer_site,
+.footer_contact,
+.footer_helpme,
+.footer_others {
+  font-family: 'Permanent Marker', cursive;
+  height: fit-content;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-transform: uppercase;
+  z-index: 4;
+  margin-top: 8rem;
+}
+
+.footer_site a,
+.footer_helpme a,
+.footer_contact a,
+.footer_others a {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  line-height: 2rem;
+  color: hsl(256, 26%, 20%);
+  font-size: 14px;
+  font-weight: 700;
+}
+.footer_links h3 {
+  color: #da531a;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+.footer_links a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer_links a:is(:hover, :active) {
+  text-decoration: underline;
+  color: #da531a;
+}
+.footer_icons {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: #da531a;
+  font-size: 28px;
+}
+#icon {
+  z-index: 6;
+}
+#icon:is(:hover, :focus) {
+  color: #d69811;
+  cursor: pointer;
+}
+.coded {
+  font-family: 'Permanent Marker', cursive;
+  text-align: end;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  color: #da541a6e;
+}

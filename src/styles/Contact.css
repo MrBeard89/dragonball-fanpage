@@ -1,0 +1,63 @@
+.contact_container {
+  font-family: 'Permanent Marker', cursive;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+.form_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 800px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form_container .btn {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 22px;
+  width: 8rem;
+  border-radius: 12px;
+  outline: none;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: #441907;
+  color: #d69811;
+}
+.form_container .btn:is(:hover, :focus) {
+  background-color: #da531a;
+  color: #000;
+}
+.form_container .textarea {
+  font-family: 'Permanent Marker', cursive;
+  height: 300px;
+  resize: none;
+  font-size: 22px;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  outline: none;
+  padding: 1rem;
+  border: 2px solid #000;
+  color: #d69811;
+  background-color: #441907;
+}
+.form_container input {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 22px;
+  border-radius: 12px;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 2px solid #000;
+  color: #d69811;
+  background-color: #441907;
+}
+.form_text {
+  margin-bottom: 2rem;
+}
+.vegeta_img {
+  width: 500px;
+}

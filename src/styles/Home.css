@@ -1,0 +1,178 @@
+.home_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.home_bottom_info_wrapper {
+  position: relative;
+}
+
+.home_container {
+  position: relative;
+  font-family: 'Permanent Marker', cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8rem;
+  margin-bottom: 5rem;
+  height: 100vh;
+}
+.home_text_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 1rem;
+  border: 5px solid #000;
+  border-radius: 8px;
+  background-color: #da531a;
+  color: #d69811;
+  height: 400px;
+  width: 500px;
+  margin-top: 10rem;
+  padding-top: 2rem;
+  text-align: left;
+  letter-spacing: 2px;
+  line-height: 1.5rem;
+  z-index: 4;
+
+  animation: fadeInText ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.home_text_container h2 {
+  margin-bottom: 2rem;
+}
+.goku_img_container {
+  position: relative;
+  z-index: 3;
+}
+.goku_standing_img {
+  width: 700px;
+  height: 800px;
+  z-index: 3;
+}
+.goku_aura_img {
+  position: absolute;
+  animation: fadeInAura ease 4s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+}
+.home_line {
+  position: absolute;
+  background-color: #441907;
+  width: 100vw;
+  height: 400px;
+  z-index: 2;
+  border: 5px solid #000;
+  border-left: none;
+  border-right: none;
+  box-sizing: border-box;
+  margin-top: 5rem;
+}
+.goku_gif {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 200px;
+  height: 200px;
+}
+
+.home_bottom_info {
+  font-family: 'Permanent Marker', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+  background-color: #441907;
+  height: 14rem;
+  width: 100vw;
+  border: 5px solid #000;
+  border-left: none;
+  border-right: none;
+}
+.info_text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  color: #fff;
+  width: 350px;
+  margin-top: -1rem;
+  font-size: 12px;
+}
+.info_text a {
+  color: #da531a;
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+  font-size: 13px;
+  z-index: 4;
+}
+.info_text a:is(:hover, :focus) {
+  color: #d69811;
+  text-decoration: dotted;
+}
+.info_img_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 800px;
+  margin-right: 2rem;
+}
+.bulma {
+  position: absolute;
+  top: -38rem;
+  right: -6rem;
+  z-index: -1;
+  animation: bulmaMove ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAura {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  38% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(2rem);
+  }
+}
+@keyframes bulmaMove {
+  0% {
+    transform: translateY(2rem);
+  }
+  100% {
+    transform: translateY(-2rem);
+  }
+}

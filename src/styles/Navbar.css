@@ -1,0 +1,178 @@
+.navbar_container {
+  font-family: 'Permanent Marker', cursive;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #441907, #da531a);
+  height: 120px;
+  border: 2px solid #000;
+  border-left: none;
+  border-right: none;
+  width: 100vw;
+}
+.navbar_links_container {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.navbar_links {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.3rem;
+  width: 100vw;
+  list-style: none;
+  text-transform: uppercase;
+  /* margin-bottom: 1rem; */
+  text-decoration: none;
+  z-index: 1;
+  background-color: #441907;
+  border: 2px solid #000;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  height: 3rem;
+}
+.navbar_links a {
+  text-decoration: none;
+  color: #d69811;
+  background-color: #441907;
+  border: 2px solid #441907;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+.navbar_links a:is(:hover, :focus) {
+  color: #441907;
+  background-color: #da531a;
+  border: 2px solid #000;
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  background: transparent;
+}
+.logo {
+  position: absolute;
+  top: 0.5rem;
+  left: 2rem;
+  width: 100px;
+  height: 100px;
+}
+.logo:hover {
+  position: absolute;
+  top: 0.3rem;
+  left: 1.8rem;
+  width: 105px;
+  height: 105px;
+}
+
+.goku_logo_container {
+  position: absolute;
+  right: -1rem;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+.goku_logo {
+  width: 130px;
+  height: 100px;
+}
+
+.navbar_cloud_line {
+  position: relative;
+  width: 100vw;
+  height: 5px;
+  background-color: #e2b042;
+  z-index: 3;
+  box-shadow: 0px 2px 15px 6px #ffbc2c;
+  margin-bottom: 8rem;
+}
+.navbar_cloud {
+  position: absolute;
+  top: -1.3rem;
+  left: 2.5rem;
+  width: 80px;
+  height: 50px;
+  animation: cloudMove 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+.navbar_title_container {
+  position: absolute;
+  font-family: 'Permanent Marker', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_title {
+  font-size: 16px;
+}
+.goku_hair {
+  width: 60px;
+  height: 40px;
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animate-flicker {
+  -webkit-animation: flickerAnimation 1s infinite;
+  -moz-animation: flickerAnimation 1s infinite;
+  -o-animation: flickerAnimation 1s infinite;
+  animation: flickerAnimation 1s infinite;
+}
+@keyframes cloudMove {
+  0% {
+    transform: translateX(-5rem);
+  }
+  /* Media Querie required -this is for desktop*/
+  100% {
+    transform: translateX(calc(4vh * 100 / 2));
+  }
+}
