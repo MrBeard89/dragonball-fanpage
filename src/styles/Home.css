@@ -183,5 +183,133 @@
 
 /* Media Queries */
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 375px) {
+  .home_wrapper {
+    width: 365px;
+  }
+
+  /* Home Bottom Section */
+  .home_bottom_info_wrapper {
+    position: relative;
+    width: 365px;
+  }
+  .home_bottom_info {
+    position: relative;
+    flex-direction: column;
+    gap: 1rem;
+    height: fit-content;
+    width: 100vw;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    z-index: 3;
+  }
+  .info_text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    width: 300px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 8px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .info_text a {
+    color: #da531a;
+    width: 365px;
+    text-align: center;
+    font-size: 11px;
+  }
+  .info_img_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    width: 365px;
+  }
+  .info_img_container img {
+    display: flex;
+    height: 2rem;
+  }
+  .bulma {
+    top: -4rem;
+    right: -1rem;
+    height: 35vw;
+    animation: bulmaMove ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes bulmaMove {
+    0% {
+      transform: translateY(1rem);
+    }
+    100% {
+      transform: translateY(-2rem);
+    }
+  }
+
+  /* Home Hero Section */
+  .home_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 5rem;
+    height: fit-content;
+    width: 100vw;
+  }
+  .home_text_container {
+    position: relative;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+    height: 500px;
+    width: 315px;
+    margin-top: 5rem;
+    margin-right: 0;
+    margin-left: 10px;
+    margin-bottom: 8rem;
+    padding-top: 1rem;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+    z-index: 3;
+
+    animation: fadeInText ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .home_text_container h2 {
+    font-size: 18px;
+  }
+
+  .goku_standing_img {
+    margin-top: -3rem;
+    width: 100vw;
+    height: 50vh;
+  }
+  .goku_aura_img {
+    margin-top: -3rem;
+    width: 100vw;
+    height: 50vh;
+  }
+  .home_line {
+    position: absolute;
+    top: 18rem;
+    left: 0;
+    width: 380px;
+    height: 400px;
+    margin-top: 3rem;
+  }
+  .goku_gif {
+    position: absolute;
+    bottom: 1rem;
+    right: 6rem;
+    width: 120px;
+    height: 120px;
+  }
 }
