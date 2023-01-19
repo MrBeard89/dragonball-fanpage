@@ -1,3 +1,86 @@
+.gokuforms_wrapper {
+  position: relative;
+  font-family: 'Permanent Marker', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gokuforms_wrapper_title {
+  margin-bottom: 5rem;
+  background-color: #441907;
+  color: #ffae00;
+  border: 5px solid #000;
+  border-radius: 1rem;
+  font-weight: 400;
+  padding: 5px;
+}
+.gokuforms_wrapper_line {
+  position: absolute;
+  top: 20rem;
+  background-color: #441907;
+  height: 10rem;
+  width: 100vw;
+  z-index: 1;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
+}
 .gokuforms_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10rem;
+  width: 100vw;
   height: 100vh;
+  z-index: 2;
+}
+
+/* Images Container */
+.gokuforms_img_conatiner {
+  height: 35vh;
+}
+.gokuforms_img {
+  width: 15vw;
+  margin-left: 2rem;
+}
+
+/* Text Containers */
+.gokuforms_text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  max-width: 600px;
+  margin-right: 2rem;
+  margin-top: 5rem;
+}
+.react-select-container {
+  max-width: 600px;
+  text-align: center;
+
+  animation: fadeInText ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.gokuforms_text_info {
+  font-weight: 700;
+  background-color: #441907;
+  color: #ffae00;
+  border-radius: 1rem;
+  text-align: left;
+  line-height: 2rem;
+  padding: 12px;
+}
+
+/* Keyframes */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(2rem);
+  }
 }
