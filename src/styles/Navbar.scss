@@ -14,6 +14,12 @@
   align-items: flex-end;
   gap: 2rem;
 }
+.navbar_links_mobile {
+  display: none;
+}
+.mobile_menu_icon {
+  display: none;
+}
 .navbar_links {
   position: relative;
   display: flex;
@@ -72,7 +78,7 @@
 
 .goku_logo_container {
   position: absolute;
-  right: -1rem;
+  right: -0.5rem;
   display: flex;
   align-items: center;
   z-index: 3;
@@ -220,5 +226,114 @@
     100% {
       transform: translateX(50vw);
     }
+  }
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 375px) {
+  .navbar_container {
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100vw;
+  }
+  .navbar_links_container {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+  }
+  .navbar_links {
+    display: none;
+  }
+
+  /* Mobile Screen */
+  .mobile_menu_icon {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+  }
+  .mobile_menu_icon:is(:hover) {
+    cursor: pointer;
+  }
+  .mobile_menu_icon:focus {
+    top: 2.8rem;
+    left: 0.8rem;
+    padding: 2px;
+    border: 2px solid #000;
+    border-radius: 2px;
+    transition: 0.2s ease all;
+  }
+  .navbar_links_mobile {
+    display: flex;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    background-color: #441907;
+    z-index: 4;
+  }
+  .navbar_links_mobile li {
+    list-style: none;
+  }
+  .navbar_links_mobile a {
+    text-decoration: none;
+    color: #d69811;
+    background-color: #441907;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-size: 12px;
+    width: 80vw;
+  }
+  .navbar_links_mobile a:is(:hover, :focus) {
+    color: #441907;
+    background-color: #da531a;
+    border: 2px solid #000;
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+  }
+
+  /* **** */
+
+  .logo_container {
+    display: none;
+  }
+
+  .goku_logo_container {
+    top: 1.4rem;
+    right: 0;
+    z-index: 3;
+  }
+  .goku_logo {
+    width: 80px;
+    height: 60px;
+  }
+
+  .navbar_cloud {
+    width: 60px;
+    height: 40px;
+  }
+
+  .goku_hair {
+    width: 40px;
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .logo_container {
+    display: none;
   }
 }

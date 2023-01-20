@@ -2,6 +2,7 @@
   background-color: #441907;
   color: #d69811;
   width: 100vw;
+  height: fit-content;
   text-align: center;
   margin-top: -2rem;
   margin-bottom: 8rem;
@@ -25,7 +26,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 3rem;
-  height: 500px;
+  height: fit-content;
   width: 100vw;
   margin-bottom: 8rem;
 }
@@ -276,6 +277,8 @@
   transition: 0.1s ease;
   animation: flash 2s ease;
 }
+
+/* News Bottom Line Section */
 .news_line {
   position: relative;
   width: 100vw;
@@ -304,9 +307,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: 8rem;
+  padding: 0 3rem 3rem 0;
   gap: 1rem;
-  width: 100vw;
-
+  width: 70vw;
   margin-top: 5rem;
 }
 .tags {
@@ -347,5 +351,113 @@
   }
   100% {
     transform: translateY(-2rem);
+  }
+}
+/* Media Queries */
+
+@media only screen and (max-width: 375px) {
+  .news_wrapper {
+    height: fit-content;
+  }
+  .news_container {
+    height: fit-content;
+    text-align: center;
+  }
+  /* Zordon Container */
+  .zordon_cont {
+    width: 80vw;
+  }
+  .zordon_cont:hover {
+    width: 80vw;
+  }
+
+  .zordon_text_cont {
+    align-items: center;
+    margin-left: 0;
+  }
+  .zordon_img {
+    width: 80vw;
+  }
+  /* Xeno Container */
+  .xeno_cont {
+    width: 80vw;
+  }
+  .xeno_cont:hover {
+    width: 80vw;
+  }
+
+  .xeno_text_cont {
+    align-items: center;
+    margin-left: 0;
+  }
+  .xeno_img {
+    width: 80vw;
+  }
+  /* Heroes Container */
+  .heroes_cont {
+    width: 80vw;
+  }
+  .heroes_cont:hover {
+    width: 80vw;
+  }
+
+  .heroes_text_cont {
+    align-items: center;
+    margin-left: 0;
+  }
+  .heroes_img {
+    width: 80vw;
+  }
+  /* Battle Container */
+  .battle_cont {
+    width: 80vw;
+  }
+  .battle_cont:hover {
+    width: 80vw;
+  }
+
+  .battle_text_cont {
+    align-items: center;
+    margin-left: 0;
+  }
+  .battle_img {
+    width: 80vw;
+  }
+  /* DBZ Container */
+  .dbz_cont {
+    width: 80vw;
+  }
+  .dbz_cont:hover {
+    width: 80vw;
+  }
+
+  .dbz_text_cont {
+    align-items: center;
+    margin-left: 0;
+  }
+  .dbz_img {
+    width: 80vw;
+  }
+
+  /* Roshi img */
+  .roshi_img {
+    position: absolute;
+    bottom: 15rem;
+    right: 1rem;
+    width: 12vw;
+  }
+
+  /* News Line Section */
+  .news_line {
+    height: fit-content;
+  }
+
+  .news_line_tags_container {
+    width: 80vw;
+    margin-bottom: 5rem;
+    margin-left: 2.5rem;
+  }
+  .tags {
+    font-size: 12px;
   }
 }

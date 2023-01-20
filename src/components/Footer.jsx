@@ -1,11 +1,11 @@
 import React from 'react'
-import '../styles/Footer.css'
+import '../styles/Footer.scss'
 import { Link } from 'react-router-dom'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
 
 //Footer Images
-import CapsuleCorp from '../assets/capsule-corp.png'
-import CurlyLines from '../assets/footer-curly-lines.png'
+import CapsuleCorp from '../assets/footer/capsule-corp.png'
+import CurlyLines from '../assets/footer/footer-curly-lines.png'
 
 const Footer = () => {
   return (

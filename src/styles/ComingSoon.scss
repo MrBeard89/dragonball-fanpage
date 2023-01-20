@@ -97,3 +97,13 @@
     opacity: 1;
   }
 }
+/* Media Queries */
+
+@media only screen and (max-width: 1300px) {
+  .coming_soon_container {
+    height: 70vh;
+  }
+  .beerus {
+    display: none;
+  }
+}

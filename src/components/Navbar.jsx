@@ -1,13 +1,18 @@
-import React from 'react'
-import '../styles/Navbar.css'
+import React, { useState } from 'react'
+import '../styles/Navbar.scss'
 import Logo from '../assets/logo.png'
-import NavbarBgGoku from '../assets/navbar-bg-logo.png'
-import GokuCloud from '../assets/cloud.png'
-import GokuHair from '../assets/goku-hair.png'
+import NavbarBgGoku from '../assets/navbar/navbar-bg-logo.png'
+import GokuCloud from '../assets/navbar/cloud.png'
+import GokuHair from '../assets/navbar/goku-hair.png'
+
+//Mobile Menu Icons
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { GrClose } from 'react-icons/gr'
 
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+  const [isMobile, setIsMobile] = useState(false)
   return (
     <>
       <div className='navbar_container'>
@@ -21,7 +26,10 @@ const Navbar = () => {
           </Link>
         </div>
         <div className='navbar_links_container'>
-          <ul className='navbar_links'>
+          <ul
+            className={isMobile ? 'navbar_links_mobile' : 'navbar_links'}
+            onClick={() => setIsMobile(false)}
+          >
             <Link to='/'>
               <li className='link'>Home</li>
             </Link>
@@ -39,6 +47,12 @@ const Navbar = () => {
               <li className='link'>Coming Soon</li>
             </Link>
           </ul>
+          <button
+            className='mobile_menu_icon'
+            onClick={() => setIsMobile(!isMobile)}
+          >
+            {isMobile ? <GrClose /> : <GiHamburgerMenu />}
+          </button>
           <div className='goku_logo_container'>
             <img className='goku_logo' src={NavbarBgGoku} alt='ss goku'></img>
           </div>

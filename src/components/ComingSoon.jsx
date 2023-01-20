@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/ComingSoon.css'
+import '../styles/ComingSoon.scss'
 
 //Images
 import Bg from '../assets/comingsoon/bg.png'

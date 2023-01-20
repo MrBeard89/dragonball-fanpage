@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Select from 'react-select'
-import '../styles/GokuForms.css'
+import '../styles/GokuForms.scss'
 
 //Goku Forms Images
 

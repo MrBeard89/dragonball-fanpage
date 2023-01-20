@@ -40,7 +40,7 @@
   height: 35vh;
 }
 .gokuforms_img {
-  width: 15vw;
+  width: 18vw;
   margin-left: 2rem;
 }
 
@@ -82,5 +82,58 @@
   100% {
     opacity: 1;
     transform: translateY(2rem);
+  }
+}
+/* Media Queries */
+@media only screen and (max-width: 375px) {
+  .gokuforms_wrapper_title {
+    margin-bottom: 1rem !important;
+    width: 80vw;
+  }
+  .gokuforms_wrapper_title {
+    font-size: 16px !important;
+    text-align: center;
+  }
+  .gokuforms_wrapper_line {
+    top: 15rem;
+    height: 15rem;
+  }
+  .gokuforms_text_container {
+    margin: 1rem 0 1rem 0;
+  }
+  .react-select-container {
+    margin: 0 1rem 2rem 1rem;
+  }
+  .gokuforms_text_info {
+    width: 320px;
+  }
+  /* Images Container */
+  .gokuforms_img_conatiner {
+    height: 25vh !important;
+    margin-top: -2rem;
+  }
+  .gokuforms_img {
+    width: 55vw !important;
+    margin: 0 !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .gokuforms_wrapper {
+    height: fit-content;
+  }
+  .gokuforms_container {
+    flex-direction: column-reverse;
+    height: fit-content;
+    align-items: center;
+    gap: 2rem;
+  }
+  /* Images Container */
+  .gokuforms_img_conatiner {
+    height: 45vh;
+    margin-bottom: 20rem;
+  }
+  .gokuforms_img {
+    width: 35vw;
+    margin-left: 2rem;
   }
 }

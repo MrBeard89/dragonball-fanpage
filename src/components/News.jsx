@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/News.css'
+import '../styles/News.scss'
 
 //Comics images
 import Dbz from '../assets/news/dbz.jpg'

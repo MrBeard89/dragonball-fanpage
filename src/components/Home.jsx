@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../styles/Home.css'
-import GokuStanding from '../assets/goku_home.png'
-import GokuGif from '../assets/goku-gif.gif'
-import GokuAura from '../assets/goku-aura.png'
+import '../styles/Home.scss'
+import GokuStanding from '../assets/home/goku_home.png'
+import GokuGif from '../assets/home/goku-gif.gif'
+import GokuAura from '../assets/home/goku-aura.png'
 import Bulma from '../assets/home-bottom-info-images/home-bulma.png'
 
 //Home Bottom Info Images//

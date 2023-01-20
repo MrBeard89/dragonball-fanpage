@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Contact.css'
+import '../styles/Contact.scss'
 
 import Vegeta from '../assets/contact/contact_vegeta.png'
 

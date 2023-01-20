@@ -13,10 +13,9 @@
 }
 .capsule_corp_img {
   position: absolute;
-  top: -14rem;
+  top: -8rem;
   left: 10px;
-  width: 400px;
-  height: 300px;
+  height: 180px;
 }
 .footer_curly_img {
   position: absolute;
@@ -56,7 +55,7 @@
 .footer_others {
   font-family: 'Permanent Marker', cursive;
   height: fit-content;
-  width: 150px;
+  width: 130px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -151,6 +150,7 @@
   .coded {
     text-align: center;
     margin-right: 0;
+    padding-bottom: 1rem;
   }
   .capsule_corp_img {
     position: absolute;
@@ -186,5 +186,29 @@
     transform: rotateZ(48deg);
     width: 250px;
     z-index: 3;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .footer_container {
+    height: fit-content;
+  }
+  .footer_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0;
+  }
+  .footer_site,
+  .footer_contact,
+  .footer_helpme,
+  .footer_others {
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .footer_site {
+    margin-top: 5rem;
   }
 }
