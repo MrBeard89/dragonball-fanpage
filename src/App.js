@@ -12,7 +12,7 @@ function App() {
   return (
     <div className='App'>
       //add basename
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
