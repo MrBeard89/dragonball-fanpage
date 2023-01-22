@@ -90,7 +90,7 @@
   @extend %flex-justify-c;
   flex-wrap: wrap;
   margin-left: 8rem;
-  padding: 0 3rem 3rem 0;
+  padding: 0 2rem 4rem 2rem;
   gap: 1rem;
   width: 70vw;
   margin-top: 5rem;
@@ -134,13 +134,17 @@
   }
 }
 /* Media Queries */
-
+@media only screen and (max-width: 1300px) {
+  .roshi_img {
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .news_wrapper {
     height: fit-content;
   }
   .news_title {
-    font-size: 18px;
+    font-size: 16px;
   }
   .news_container {
     height: fit-content;
@@ -159,7 +163,7 @@
     margin-left: 0 !important;
   }
   .zordon_img {
-    width: 80vw !important;
+    width: 60vw !important;
   }
   /* Xeno Container */
   .xeno_cont {
@@ -174,7 +178,7 @@
     margin-left: 0 !important;
   }
   .xeno_img {
-    width: 80vw !important;
+    width: 60vw !important;
   }
   /* Heroes Container */
   .heroes_cont {
@@ -189,7 +193,7 @@
     margin-left: 0 !important;
   }
   .heroes_img {
-    width: 80vw !important;
+    width: 60vw !important;
   }
   /* Battle Container */
   .battle_cont {
@@ -204,7 +208,7 @@
     margin-left: 0 !important;
   }
   .battle_img {
-    width: 80vw !important;
+    width: 60vw !important;
   }
   /* DBZ Container */
   .dbz_cont {
@@ -219,26 +223,30 @@
     margin-left: 0 !important;
   }
   .dbz_img {
-    width: 80vw !important;
+    width: 60vw !important;
   }
 
   /* Roshi img */
   .roshi_img {
+    display: block;
     position: absolute;
     bottom: 15rem;
     right: 1rem;
-    width: 12vw;
+    width: 11vw;
   }
 
   /* News Line Section */
   .news_line {
+    display: flex;
+    flex-direction: column;
     height: fit-content;
+    align-items: center !important;
   }
 
   .news_line_tags_container {
-    width: 80vw;
+    width: 70vw;
     margin-bottom: 5rem;
-    margin-left: 2.5rem;
+    margin-left: 0;
   }
   .tags {
     font-size: 12px;
