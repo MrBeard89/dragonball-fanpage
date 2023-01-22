@@ -6,13 +6,13 @@ import News from './components/News'
 import GokuForms from './components/GokuForms'
 import ComingSoon from './components/ComingSoon'
 import Footer from './components/Footer'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
     <div className='App'>
       //add basename
-      <BrowserRouter>
+      <Router basename={process.env.PUBLIC_URL}>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -22,7 +22,7 @@ function App() {
           <Route path='/comingsoon' element={<ComingSoon />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </Router>
     </div>
   )
 }
