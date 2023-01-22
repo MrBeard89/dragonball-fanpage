@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <div className='App'>
-      //add basename
+      {/* //add basename */}
       <Router basename={process.env.PUBLIC_URL}>
         <Navbar />
         <Routes>
