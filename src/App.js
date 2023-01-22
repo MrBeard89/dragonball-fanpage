@@ -11,7 +11,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <div className='App'>
-      <BrowserRouter>
+      //add basename
+      <BrowserRouter basename='/dragonball-fanpage'>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
