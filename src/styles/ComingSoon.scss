@@ -127,7 +127,8 @@
       display: v.$display-none;
     }
     h3 {
-      width: 90vw;
+      width: fit-content;
+      text-align: center;
     }
   }
 }
