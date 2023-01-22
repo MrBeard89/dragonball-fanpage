@@ -1,107 +1,130 @@
+@use './variables/variables' as v;
+@forward './templates/templates';
+
+//Main Container
+
 .contact_container {
-  font-family: 'Permanent Marker', cursive;
-  height: 100vh;
+  font-family: v.$fontfamily;
+  height: v.$height;
   display: flex;
   justify-content: center;
   gap: 8rem;
+
+  //Form Container
+
+  .form_container {
+    @extend %flex-column;
+    gap: 1rem;
+    width: 800px;
+    .form {
+      @extend %flex-column;
+      gap: 0.5rem;
+    }
+
+    //Textarea
+
+    .textarea {
+      font-family: v.$fontfamily;
+      height: 300px;
+      resize: none;
+      font-size: 22px;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      outline: none;
+      padding: 1rem;
+      border: 2px solid v.$color-black;
+      color: v.$color-main-1;
+      background-color: v.$color-main-2;
+    }
+
+    //Input field
+
+    input {
+      font-family: v.$fontfamily;
+      font-size: 22px;
+      border-radius: 12px;
+      outline: none;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      border: 2px solid v.$color-black;
+      color: v.$color-main-1;
+      background-color: v.$color-main-2;
+    }
+
+    //Send button
+
+    .btn {
+      font-family: v.$fontfamily;
+      font-size: 22px;
+      width: 8rem;
+      border-radius: 12px;
+      outline: none;
+      border: 2px solid v.$color-black;
+      cursor: v.$cursor-pointer;
+      background-color: v.$color-main-2;
+      color: v.$color-main-1;
+
+      //BTN Hover
+
+      &:is(:hover, :focus) {
+        background-color: v.$color-main-3;
+        color: v.$color-black;
+      }
+    }
+  }
+  .form_text {
+    margin-bottom: 2rem;
+  }
+
+  //vegeta Image
+
+  .vegeta_img {
+    width: 500px;
+  }
 }
-.form_container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 800px;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.form_container .btn {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 22px;
-  width: 8rem;
-  border-radius: 12px;
-  outline: none;
-  border: 2px solid #000;
-  cursor: pointer;
-  background-color: #441907;
-  color: #d69811;
-}
-.form_container .btn:is(:hover, :focus) {
-  background-color: #da531a;
-  color: #000;
-}
-.form_container .textarea {
-  font-family: 'Permanent Marker', cursive;
-  height: 300px;
-  resize: none;
-  font-size: 22px;
-  border-radius: 12px;
-  margin-bottom: 2rem;
-  outline: none;
-  padding: 1rem;
-  border: 2px solid #000;
-  color: #d69811;
-  background-color: #441907;
-}
-.form_container input {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 22px;
-  border-radius: 12px;
-  outline: none;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border: 2px solid #000;
-  color: #d69811;
-  background-color: #441907;
-}
-.form_text {
-  margin-bottom: 2rem;
-}
-.vegeta_img {
-  width: 500px;
-}
+
 /* Media Queries */
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
   .contact_container {
-    width: 100vw !important;
-    height: 100vh !important;
+    width: v.$width !important;
+    height: v.$height !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
     gap: 1rem !important;
     margin-top: -8rem !important;
     margin-bottom: 8rem !important;
-  }
-  .form_container {
-    width: 350px !important;
-    margin-top: 1rem !important;
-    margin-bottom: 5rem;
-  }
-  .form_container .btn {
-    margin-left: 5.5rem !important;
-  }
 
-  .vegeta_img {
-    display: none !important;
+    .form_container {
+      width: 350px !important;
+      margin-top: 1rem !important;
+      margin-bottom: 5rem;
+
+      .btn {
+        margin-left: 5.5rem !important;
+      }
+    }
+    .vegeta_img {
+      display: v.$display-none !important;
+    }
   }
 }
 @media only screen and (max-width: 800px) {
   .contact_container {
-    width: 100vw;
+    width: v.$width;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-  }
-  .form_container {
-    width: 80vw !important;
-    height: 80vh;
-    margin-top: -18rem;
-    margin-bottom: 5rem;
-  }
-  .vegeta_img {
-    display: none;
+    .form_container {
+      width: 80vw !important;
+      height: 80vh;
+      margin-top: -18rem;
+      margin-bottom: 5rem;
+    }
+    .vegeta_img {
+      display: v.$display-none;
+    }
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -114,7 +137,7 @@
 }
 @media only screen and (max-width: 1500px) {
   .form_container {
-    width: 500px;
+    width: 400px !important;
   }
   .vegeta_img {
     width: 300px;

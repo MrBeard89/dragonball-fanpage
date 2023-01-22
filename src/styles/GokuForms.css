@@ -1,0 +1,166 @@
+.gokuforms_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/***************************/
+.gokuforms_wrapper .gokuforms_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/***************************/
+.gokuforms_wrapper .gokuforms_wrapper_line {
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
+}
+
+/***************************/
+.gokuforms_wrapper .gokuforms_container .gokuforms_text_container .react-select-container {
+  -webkit-animation: fadeInText ease 4s;
+          animation: fadeInText ease 4s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+/***********************News Card Templates*************************/
+.gokuforms_wrapper {
+  position: relative;
+  font-family: "Permanent Marker", cursive;
+}
+.gokuforms_wrapper .gokuforms_wrapper_title {
+  margin-bottom: 5rem;
+  background-color: #441907;
+  color: #ffae00;
+  border: 5px solid #000;
+  border-radius: 1rem;
+  font-weight: 400;
+  padding: 5px;
+}
+.gokuforms_wrapper .gokuforms_wrapper_line {
+  width: 100vw;
+  height: 10rem;
+  position: absolute;
+  top: 20rem;
+  background-color: #441907;
+  z-index: 1;
+}
+.gokuforms_wrapper .gokuforms_container {
+  width: 100vw;
+  height: 100vh;
+  gap: 10rem;
+  z-index: 2;
+}
+.gokuforms_wrapper .gokuforms_container .gokuforms_img_conatiner {
+  height: 35vh;
+}
+.gokuforms_wrapper .gokuforms_container .gokuforms_img_conatiner .gokuforms_img {
+  width: 18vw;
+  margin-left: 2rem;
+}
+.gokuforms_wrapper .gokuforms_container .gokuforms_text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  max-width: 600px;
+  margin-right: 2rem;
+  margin-top: 5rem;
+}
+.gokuforms_wrapper .gokuforms_container .gokuforms_text_container .react-select-container {
+  max-width: 600px;
+  text-align: center;
+}
+.gokuforms_wrapper .gokuforms_container .gokuforms_text_container .gokuforms_text_info {
+  font-weight: 700;
+  background-color: #441907;
+  color: #ffae00;
+  border-radius: 1rem;
+  text-align: left;
+  line-height: 2rem;
+  padding: 12px;
+}
+
+/* Keyframes */
+@-webkit-keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(2rem);
+  }
+}
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(2rem);
+  }
+}
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .gokuforms_wrapper {
+    margin-top: -4rem !important;
+  }
+  .gokuforms_wrapper .gokuforms_wrapper_title {
+    margin-bottom: 1rem !important;
+    width: 80vw;
+    font-size: 16px !important;
+    text-align: center;
+  }
+  .gokuforms_wrapper_line {
+    top: 15rem;
+    height: 15rem;
+  }
+  .gokuforms_text_container {
+    margin: 6rem 0 1rem 0 !important;
+  }
+  .gokuforms_text_container .react-select-container {
+    margin: 0 1rem 2rem 1rem;
+  }
+  .gokuforms_text_container .gokuforms_text_info {
+    width: 320px;
+  }
+  /* Images Container */
+  .gokuforms_img_conatiner {
+    height: 25vh !important;
+    margin-top: -2rem;
+  }
+  .gokuforms_img_conatiner .gokuforms_img {
+    width: 55vw !important;
+    margin: 0 !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .gokuforms_wrapper {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .gokuforms_wrapper .gokuforms_container {
+    flex-direction: column-reverse;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    align-items: center;
+    gap: 2rem;
+    /* Images Container */
+  }
+  .gokuforms_wrapper .gokuforms_container .gokuforms_img_conatiner {
+    height: 45vh;
+    margin-bottom: 20rem;
+  }
+  .gokuforms_wrapper .gokuforms_container .gokuforms_img_conatiner .gokuforms_img {
+    width: 35vw;
+    margin-left: 2rem;
+  }
+}/*# sourceMappingURL=GokuForms.css.map */

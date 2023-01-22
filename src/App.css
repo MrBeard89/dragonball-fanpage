@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #f85b1a;
+  @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+}/*# sourceMappingURL=App.css.map */

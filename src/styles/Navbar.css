@@ -1,0 +1,369 @@
+.navbar_title_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo_container, .goku_logo_container {
+  display: flex;
+  align-items: center;
+}
+
+/***************************/
+.navbar_container .navbar_links_container .navbar_links {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/***************************/
+/***************************/
+.navbar_cloud_line .navbar_cloud {
+  -webkit-animation: cloudMove 5s;
+          animation: cloudMove 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+/***********************News Card Templates*************************/
+.navbar_container {
+  width: 100vw;
+  height: 120px;
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #441907, #da531a);
+  border: 2px solid #000;
+  border-left: none;
+  border-right: none;
+}
+.navbar_container .navbar_links_container {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.navbar_container .navbar_links_container .navbar_links {
+  width: 100vw;
+  height: 3rem;
+  position: relative;
+  gap: 1.3rem;
+  list-style: none;
+  text-transform: uppercase;
+  /* margin-bottom: 1rem; */
+  text-decoration: none;
+  z-index: 1;
+  background-color: #441907;
+  border: 2px solid #000;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+.navbar_container .navbar_links_container .navbar_links a {
+  text-decoration: none;
+  color: #d69811;
+  background-color: #441907;
+  border: 2px solid #441907;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+.navbar_container .navbar_links_container .navbar_links a:is(:hover, :focus) {
+  color: #441907;
+  background-color: #da531a;
+  border: 2px solid #000;
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+.navbar_container .navbar_links_container .navbar_links_mobile {
+  display: none;
+}
+
+.mobile_menu_icon {
+  display: none;
+}
+
+.logo_container {
+  z-index: 3;
+  background: transparent;
+}
+.logo_container .logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0.5rem;
+  left: 2rem;
+}
+.logo_container .logo:hover {
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  top: 0.3rem;
+  left: 1.8rem;
+}
+
+.goku_logo_container {
+  position: absolute;
+  right: -0.5rem;
+  z-index: 3;
+}
+.goku_logo_container .goku_logo {
+  width: 130px;
+  height: 100px;
+}
+
+.navbar_cloud_line {
+  width: 100vw;
+  height: 5px;
+  position: relative;
+  background-color: #ffbc2c;
+  z-index: 3;
+  box-shadow: 0px 2px 15px 6px #ffbc2c;
+  margin-bottom: 8rem;
+}
+.navbar_cloud_line .navbar_cloud {
+  width: 80px;
+  height: 50px;
+  position: absolute;
+  top: -1.3rem;
+  left: 2.5rem;
+}
+
+.navbar_title_container {
+  position: absolute;
+  font-family: "Permanent Marker", cursive;
+}
+.navbar_title_container .goku_hair {
+  width: 60px;
+  height: 40px;
+}
+.navbar_title_container .navbar_title {
+  font-size: 16px;
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animate-flicker {
+  -webkit-animation: flickerAnimation 1s infinite;
+  animation: flickerAnimation 1s infinite;
+}
+
+@-webkit-keyframes cloudMove {
+  0% {
+    transform: translateX(-5rem);
+  }
+  /* Media Querie required -this is for desktop*/
+  100% {
+    transform: translateX(95vw);
+  }
+}
+
+@keyframes cloudMove {
+  0% {
+    transform: translateX(-5rem);
+  }
+  /* Media Querie required -this is for desktop*/
+  100% {
+    transform: translateX(95vw);
+  }
+}
+/* Media Queries for Cloud*/
+@media only screen and (max-width: 1800px) {
+  @-webkit-keyframes cloudMove {
+    0% {
+      transform: translateX(-5rem);
+    }
+    /* Media Querie required -this is for desktop*/
+    100% {
+      transform: translateX(80vw);
+    }
+  }
+  @keyframes cloudMove {
+    0% {
+      transform: translateX(-5rem);
+    }
+    /* Media Querie required -this is for desktop*/
+    100% {
+      transform: translateX(80vw);
+    }
+  }
+}
+@media only screen and (max-width: 1400px) {
+  @-webkit-keyframes cloudMove {
+    0% {
+      transform: translateX(-5rem);
+    }
+    100% {
+      transform: translateX(75vw);
+    }
+  }
+  @keyframes cloudMove {
+    0% {
+      transform: translateX(-5rem);
+    }
+    100% {
+      transform: translateX(75vw);
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  @-webkit-keyframes cloudMove {
+    0% {
+      transform: translateX(-5rem);
+    }
+    100% {
+      transform: translateX(68vw);
+    }
+  }
+  @keyframes cloudMove {
+    0% {
+      transform: translateX(-5rem);
+    }
+    100% {
+      transform: translateX(68vw);
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  @-webkit-keyframes cloudMove {
+    0% {
+      transform: translateX(-5rem);
+    }
+    100% {
+      transform: translateX(50vw);
+    }
+  }
+  @keyframes cloudMove {
+    0% {
+      transform: translateX(-5rem);
+    }
+    100% {
+      transform: translateX(50vw);
+    }
+  }
+}
+/************/
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .navbar_container {
+    width: 100vw;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar_container .navbar_links_container {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+    /* Mobile Screen */
+  }
+  .navbar_container .navbar_links_container .mobile_menu_icon {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+  }
+  .navbar_container .navbar_links_container .mobile_menu_icon:is(:hover) {
+    cursor: pointer;
+  }
+  .navbar_container .navbar_links_container .mobile_menu_icon:focus {
+    top: 2.8rem;
+    left: 0.8rem;
+    padding: 2px;
+    border: 2px solid #000;
+    border-radius: 2px;
+    transition: 0.2s ease all;
+  }
+  .navbar_container .navbar_links_container .navbar_links {
+    display: none;
+  }
+  .navbar_links_mobile {
+    width: 100vw;
+    height: 60vh;
+    display: flex !important;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    background-color: #441907;
+    z-index: 4;
+  }
+  .navbar_links_mobile a {
+    text-decoration: none;
+    color: #d69811;
+    background-color: #441907;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-size: 12px;
+    width: 80vw;
+  }
+  .navbar_links_mobile a:is(:hover, :focus) {
+    color: #441907;
+    background-color: #da531a;
+    border: 2px solid #000;
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+  }
+  .navbar_links_mobile li {
+    list-style: none;
+  }
+  /* **** */
+  .logo_container {
+    display: none;
+  }
+  .goku_logo_container {
+    top: 1.4rem;
+    right: 0;
+    z-index: 3;
+  }
+  .goku_logo_container .goku_logo {
+    width: 80px;
+    height: 60px;
+  }
+  .navbar_cloud_line {
+    z-index: 5;
+  }
+  .navbar_cloud {
+    width: 60px;
+    height: 40px;
+  }
+  .goku_hair {
+    width: 40px;
+    height: 25px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .logo_container {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

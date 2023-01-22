@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/Navbar.scss'
-import Logo from '../assets/logo.png'
+import Logo from '../assets/navbar/logo.png'
 import NavbarBgGoku from '../assets/navbar/navbar-bg-logo.png'
 import GokuCloud from '../assets/navbar/cloud.png'
 import GokuHair from '../assets/navbar/goku-hair.png'

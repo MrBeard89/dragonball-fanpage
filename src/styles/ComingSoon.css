@@ -1,0 +1,130 @@
+.coming_soon_container .shadow .bg-img-shadow, .coming_soon_container .bg-img-container, .coming_soon_container .bg-img-container .bg-img {
+  max-width: 80vw;
+  max-height: 50vh;
+}
+
+.coming_soon_container, .coming_soon_container .bg-img-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/***************************/
+/***************************/
+/***************************/
+/***********************News Card Templates*************************/
+.coming_soon_container {
+  position: relative;
+  gap: 2rem;
+  font-family: "Permanent Marker", cursive;
+  height: 100vh;
+}
+.coming_soon_container h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #000;
+  color: #d69811;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+.coming_soon_container .beerus {
+  position: absolute;
+  left: 0px;
+  top: 1rem;
+  height: 8rem;
+}
+.coming_soon_container .coming_soon_line {
+  position: absolute;
+  top: 8rem;
+  background-color: #441907;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
+  max-height: 30vw;
+  min-height: 12vw;
+  width: 100vw;
+  z-index: 2;
+}
+.coming_soon_container .shadow {
+  position: absolute;
+  top: 4.1rem;
+  z-index: 2;
+  border-radius: 1rem;
+  background-color: #441907;
+  box-shadow: 0px 0px 25px 25px #ffae00;
+  -webkit-animation: shadowFlash 2s ease;
+          animation: shadowFlash 2s ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.coming_soon_container .shadow .bg-img-shadow {
+  z-index: 3;
+  border-radius: 1rem;
+}
+.coming_soon_container .bg-img-container {
+  justify-content: center;
+  border-radius: 1rem;
+  z-index: 3;
+}
+.coming_soon_container .bg-img-container .bg-img {
+  z-index: 3;
+  border-radius: 1rem;
+  border: 8px solid #000;
+}
+.coming_soon_container .bg-img-container .bg-img:hover {
+  cursor: pointer;
+  max-width: 81vw;
+  max-height: 51vh;
+  transition: 0.5s ease;
+}
+.coming_soon_container .bg-img-container .bg-img:active {
+  max-width: 79vw;
+  max-height: 49vh;
+  transition: 0.5s ease;
+}
+.coming_soon_container .whis {
+  position: absolute;
+  right: 1rem;
+  bottom: 0px;
+  height: 25vw;
+  z-index: 4;
+}
+
+/* Keyframe */
+@-webkit-keyframes shadowFlash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes shadowFlash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Media Querie */
+@media only screen and (max-width: 1300px) {
+  .shadow {
+    display: none;
+  }
+  .coming_soon_container {
+    height: 70vh;
+  }
+  .coming_soon_container .beerus {
+    display: none;
+  }
+  .coming_soon_container h3 {
+    width: 90vw;
+  }
+}/*# sourceMappingURL=ComingSoon.css.map */

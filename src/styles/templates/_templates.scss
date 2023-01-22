@@ -1,0 +1,345 @@
+//Coming soon Section Dimensions
+%comingsoon-maxdim {
+  max-width: 80vw;
+  max-height: 50vh;
+}
+//Flex:Align items center with column
+%ai-center-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+//Flex:Justify center with column
+%jc-center-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+//Flex:full center column
+%full-center-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+//Flex:column only
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+//Flex:justify center only
+%flex-justify-c {
+  display: flex;
+  justify-content: center;
+}
+//Flex:align-items center only
+%flex-align-c {
+  display: flex;
+  align-items: center;
+}
+
+/***************************/
+
+//Flex:justify center with Row
+%jc-center-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+//Flex:row only
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/***************************/
+
+//Border:Top-Bottom
+%border-top-bottom {
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
+}
+//Border:Top-Bottom 2px
+%border-top-bottom2px {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+//Border
+%border {
+  border: 5px solid #000;
+}
+/***************************/
+////Animations//////////////
+///
+///
+//FadeinText Animation
+%fade-in-text {
+  animation: fadeInText ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+//FadeinAura Animation
+%fade-in-aura {
+  animation: fadeInAura ease 4s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+}
+
+//BulmaMove
+%bulma-move {
+  animation: bulmaMove ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+//CloudMove
+%cloud-move {
+  animation: cloudMove 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+//Roshimove
+%roshimove {
+  animation: roshiMove ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/***********************News Card Templates*************************/
+
+%dbz-card {
+  .dbz_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 5px solid #000;
+    box-shadow: 0px 2px 5px 5px #813210;
+
+    .dbz_img {
+      width: 350px;
+    }
+
+    .dbz_text_cont {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-left: -1rem;
+
+      .dbz_label {
+        background-color: black;
+        color: #da531a;
+        width: fit-content;
+        padding: 0 5px;
+        border-radius: 8px;
+      }
+
+      .dbz_text {
+        width: 300px;
+        line-height: 1.1rem;
+      }
+    }
+
+    &:hover {
+      width: 400px;
+      height: 370px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      box-shadow: 0px 2px 12px 12px #813210;
+    }
+  }
+}
+%battle-card {
+  .battle_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 5px solid #000;
+    box-shadow: 0px 2px 5px 5px #813210;
+
+    .battle_img {
+      width: 350px;
+    }
+
+    .battle_text_cont {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-left: -1rem;
+
+      .battle_label {
+        background-color: black;
+        color: #da531a;
+        width: fit-content;
+        padding: 0 5px;
+        border-radius: 8px;
+      }
+
+      .battle_text {
+        width: 300px;
+        line-height: 1.1rem;
+      }
+    }
+
+    &:hover {
+      width: 400px;
+      height: 370px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      box-shadow: 0px 2px 12px 12px #813210;
+    }
+  }
+}
+%heroes-card {
+  .heroes_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 5px solid #000;
+    box-shadow: 0px 2px 5px 5px #813210;
+
+    .heroes_img {
+      width: 350px;
+    }
+
+    .heroes_text_cont {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-left: -1rem;
+
+      .heroes_label {
+        background-color: black;
+        color: #da531a;
+        width: fit-content;
+        padding: 0 5px;
+        border-radius: 8px;
+      }
+
+      .heroes_text {
+        width: 300px;
+        line-height: 1.1rem;
+      }
+    }
+
+    &:hover {
+      width: 400px;
+      height: 370px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      box-shadow: 0px 2px 12px 12px #813210;
+    }
+  }
+}
+%xeno-card {
+  .xeno_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 5px solid #000;
+    box-shadow: 0px 2px 5px 5px #813210;
+
+    .xeno_img {
+      width: 350px;
+    }
+
+    .xeno_text_cont {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-left: -1rem;
+
+      .xeno_label {
+        background-color: black;
+        color: #da531a;
+        width: fit-content;
+        padding: 0 5px;
+        border-radius: 8px;
+      }
+
+      .xeno_text {
+        width: 300px;
+        line-height: 1.1rem;
+      }
+    }
+
+    &:hover {
+      width: 400px;
+      height: 370px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      box-shadow: 0px 2px 12px 12px #813210;
+    }
+  }
+}
+%zordon-card {
+  .zordon_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 5px solid #000;
+    box-shadow: 0px 2px 5px 5px #813210;
+
+    .zordon_img {
+      width: 350px;
+    }
+
+    .zordon_text_cont {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-left: -1rem;
+
+      .zordon_label {
+        background-color: black;
+        color: #da531a;
+        width: fit-content;
+        padding: 0 5px;
+        border-radius: 8px;
+      }
+
+      .zordon_text {
+        width: 300px;
+        line-height: 1.1rem;
+      }
+    }
+
+    &:hover {
+      width: 400px;
+      height: 370px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      box-shadow: 0px 2px 12px 12px #813210;
+    }
+  }
+}

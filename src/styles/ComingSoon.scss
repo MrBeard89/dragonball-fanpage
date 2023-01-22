@@ -1,91 +1,109 @@
+@use 'variables/variables' as v;
+@forward './templates/templates';
+
+// Main Container
 .coming_soon_container {
+  @extend %ai-center-column;
   position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   gap: 2rem;
-  font-family: 'Permanent Marker', cursive;
+  font-family: v.$fontfamily;
   height: 100vh;
-}
-.coming_soon_container h3 {
-  width: fit-content;
-  background-color: #000;
-  color: #d69811;
-  padding: 4px 8px;
-  border-radius: 8px;
-}
-.bg-img-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 80vw;
-  max-height: 50vh;
-  border-radius: 1rem;
-  z-index: 3;
-}
-.shadow {
-  position: absolute;
-  top: 4.1rem;
-  z-index: 2;
-  border-radius: 1rem;
-  background-color: #441907;
-  box-shadow: 0px 0px 25px 25px #ffae00;
-  animation: shadowFlash 2s ease;
-  animation-iteration-count: infinite;
+
+  //Main Title
+
+  h3 {
+    width: fit-content;
+    background-color: v.$color-black;
+    color: v.$color-main-1;
+    padding: 4px 8px;
+    border-radius: 8px;
+  }
+
+  //Beerus Image
+  .beerus {
+    position: v.$absolute;
+    left: 0px;
+    top: 1rem;
+    height: 8rem;
+  }
+
+  //Decor Line
+
+  .coming_soon_line {
+    position: v.$absolute;
+    top: 8rem;
+    background-color: v.$color-main-2;
+    border-top: 5px solid v.$color-black;
+    border-bottom: 5px solid v.$color-black;
+    max-height: 30vw;
+    min-height: 12vw;
+    width: 100vw;
+    z-index: 2;
+  }
+
+  //Div behind .bg-img-container to represent flasing
+
+  .shadow {
+    position: v.$absolute;
+    top: 4.1rem;
+    z-index: 2;
+    border-radius: 1rem;
+    background-color: v.$color-main-2;
+    box-shadow: 0px 0px 25px 25px v.$color-boxflash;
+    animation: shadowFlash 2s ease;
+    animation-iteration-count: infinite;
+
+    //Shadow image
+    .bg-img-shadow {
+      @extend %comingsoon-maxdim;
+      z-index: 3;
+      border-radius: 1rem;
+    }
+  }
+
+  //Main Image Container
+
+  .bg-img-container {
+    @extend %comingsoon-maxdim;
+    @extend %ai-center-column;
+    justify-content: center;
+    border-radius: 1rem;
+    z-index: 3;
+
+    //Image
+
+    .bg-img {
+      @extend %comingsoon-maxdim;
+      z-index: 3;
+      border-radius: 1rem;
+      border: 8px solid v.$color-black;
+      &:hover {
+        cursor: v.$cursor-pointer;
+        max-width: 81vw;
+        max-height: 51vh;
+        transition: v.$transition-coming-soon;
+      }
+      &:active {
+        max-width: 79vw;
+        max-height: 49vh;
+        transition: v.$transition-coming-soon;
+      }
+    }
+  }
+
+  //Whis Image
+
+  .whis {
+    position: v.$absolute;
+    right: 1rem;
+    bottom: 0px;
+    height: 25vw;
+    z-index: 4;
+  }
 }
 
-.bg-img {
-  max-width: 80vw;
-  max-height: 50vh;
-  z-index: 3;
-  border-radius: 1rem;
-  border: 8px solid #000;
-}
-.bg-img:hover {
-  cursor: pointer;
-  max-width: 81vw;
-  max-height: 51vh;
-  transition: 0.5s ease;
-}
-.bg-img:active {
-  max-width: 80vw;
-  max-height: 50vh;
-  transition: 0.5s ease;
-}
-.bg-img-shadow {
-  max-width: 80vw;
-  max-height: 50vh;
-  z-index: 3;
-  border-radius: 1rem;
-}
-.coming_soon_line {
-  position: absolute;
-  top: 8rem;
-  background-color: #441907;
-  border-top: 5px solid #000;
-  border-bottom: 5px solid #000;
-  max-height: 30vw;
-  min-height: 12vw;
-  width: 100vw;
-  z-index: 2;
-}
+/* Keyframe */
 
-/* Png s: Whis, Beerus */
-
-.beerus {
-  position: absolute;
-  left: 0px;
-  top: 1rem;
-  height: 8rem;
-}
-.whis {
-  position: absolute;
-  right: 1rem;
-  bottom: 0px;
-  height: 25vw;
-  z-index: 4;
-}
 @keyframes shadowFlash {
   0% {
     opacity: 1;
@@ -97,13 +115,19 @@
     opacity: 1;
   }
 }
-/* Media Queries */
+/* Media Querie */
 
 @media only screen and (max-width: 1300px) {
+  .shadow {
+    display: none;
+  }
   .coming_soon_container {
     height: 70vh;
-  }
-  .beerus {
-    display: none;
+    .beerus {
+      display: v.$display-none;
+    }
+    h3 {
+      width: 90vw;
+    }
   }
 }
