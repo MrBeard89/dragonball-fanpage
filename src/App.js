@@ -12,7 +12,7 @@ function App() {
   return (
     <div className='App'>
       //add basename
-      <BrowserRouter basename='/dragonball-fanpage'>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
