@@ -96,8 +96,7 @@
 .footer_container .footer_links .footer_contact,
 .footer_container .footer_links .footer_helpme,
 .footer_container .footer_links .footer_others {
-  font-family: "Permanent Marker", cursive;
-  height: -webkit-fit-content;
+  font-family: "Permanent Marker", "Comic Sans MS", "Comic Sans", sans-serif, cursive;
   height: -moz-fit-content;
   height: fit-content;
   width: 130px;
@@ -113,7 +112,7 @@
   list-style: none;
   padding: 0;
   line-height: 2rem;
-  color: hsl(256deg, 26%, 20%);
+  color: hsl(256, 26%, 20%);
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
@@ -127,7 +126,7 @@
   color: #da531a;
 }
 .footer_container .coded {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Permanent Marker", "Comic Sans MS", "Comic Sans", sans-serif, cursive;
   text-align: end;
   margin-right: 3rem;
   margin-top: 2rem;
@@ -137,7 +136,6 @@
 /* Media Queries */
 @media only screen and (max-width: 768px) {
   .footer_container {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -165,9 +163,9 @@
     padding: 0;
   }
   .footer_container .footer_links .footer_site,
-.footer_container .footer_links .footer_contact,
-.footer_container .footer_links .footer_helpme,
-.footer_container .footer_links .footer_others {
+  .footer_container .footer_links .footer_contact,
+  .footer_container .footer_links .footer_helpme,
+  .footer_container .footer_links .footer_others {
     margin-top: 2rem;
     gap: -1rem;
     align-items: center;
@@ -176,9 +174,9 @@
     margin-top: 5rem;
   }
   .footer_container .footer_links .footer_site a,
-.footer_container .footer_links .footer_helpme a,
-.footer_container .footer_links .footer_contact a,
-.footer_container .footer_links .footer_others a {
+  .footer_container .footer_links .footer_helpme a,
+  .footer_container .footer_links .footer_contact a,
+  .footer_container .footer_links .footer_others a {
     font-size: 12px;
     text-align: center;
   }
@@ -209,7 +207,6 @@
 }
 @media only screen and (max-width: 1050px) {
   .footer_container {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -222,9 +219,9 @@
     padding: 0;
   }
   .footer_container .footer_links .footer_site,
-.footer_container .footer_links .footer_contact,
-.footer_container .footer_links .footer_helpme,
-.footer_container .footer_links .footer_others {
+  .footer_container .footer_links .footer_contact,
+  .footer_container .footer_links .footer_helpme,
+  .footer_container .footer_links .footer_others {
     align-items: center;
     text-align: center;
     margin-top: 2rem;

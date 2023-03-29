@@ -20,18 +20,15 @@
 
 /***************************/
 .gokuforms_wrapper .gokuforms_container .gokuforms_text_container .react-select-container {
-  -webkit-animation: fadeInText ease 4s;
-          animation: fadeInText ease 4s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: fadeInText ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 /***********************News Card Templates*************************/
 .gokuforms_wrapper {
   position: relative;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Permanent Marker", "Comic Sans MS", "Comic Sans", sans-serif, cursive;
 }
 .gokuforms_wrapper .gokuforms_wrapper_title {
   margin-bottom: 5rem;
@@ -86,16 +83,6 @@
 }
 
 /* Keyframes */
-@-webkit-keyframes fadeInText {
-  0% {
-    opacity: 0;
-    transform: translateY(-2rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(2rem);
-  }
-}
 @keyframes fadeInText {
   0% {
     opacity: 0;
@@ -142,13 +129,11 @@
 }
 @media only screen and (max-width: 1200px) {
   .gokuforms_wrapper {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
   .gokuforms_wrapper .gokuforms_container {
     flex-direction: column-reverse;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     align-items: center;

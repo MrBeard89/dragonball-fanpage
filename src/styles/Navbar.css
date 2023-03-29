@@ -20,19 +20,16 @@
 /***************************/
 /***************************/
 .navbar_cloud_line .navbar_cloud {
-  -webkit-animation: cloudMove 5s;
-          animation: cloudMove 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: cloudMove 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
 }
 
 /***********************News Card Templates*************************/
 .navbar_container {
   width: 100vw;
   height: 120px;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Permanent Marker", "Comic Sans MS", "Comic Sans", sans-serif, cursive;
   display: flex;
   justify-content: center;
   background: linear-gradient(180deg, #441907, #da531a);
@@ -132,7 +129,7 @@
 
 .navbar_title_container {
   position: absolute;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Permanent Marker", "Comic Sans MS", "Comic Sans", sans-serif, cursive;
 }
 .navbar_title_container .goku_hair {
   width: 60px;
@@ -153,30 +150,8 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .animate-flicker {
-  -webkit-animation: flickerAnimation 1s infinite;
   animation: flickerAnimation 1s infinite;
-}
-
-@-webkit-keyframes cloudMove {
-  0% {
-    transform: translateX(-5rem);
-  }
-  /* Media Querie required -this is for desktop*/
-  100% {
-    transform: translateX(95vw);
-  }
 }
 
 @keyframes cloudMove {
@@ -190,15 +165,6 @@
 }
 /* Media Queries for Cloud*/
 @media only screen and (max-width: 1800px) {
-  @-webkit-keyframes cloudMove {
-    0% {
-      transform: translateX(-5rem);
-    }
-    /* Media Querie required -this is for desktop*/
-    100% {
-      transform: translateX(80vw);
-    }
-  }
   @keyframes cloudMove {
     0% {
       transform: translateX(-5rem);
@@ -210,14 +176,6 @@
   }
 }
 @media only screen and (max-width: 1400px) {
-  @-webkit-keyframes cloudMove {
-    0% {
-      transform: translateX(-5rem);
-    }
-    100% {
-      transform: translateX(75vw);
-    }
-  }
   @keyframes cloudMove {
     0% {
       transform: translateX(-5rem);
@@ -228,14 +186,6 @@
   }
 }
 @media only screen and (max-width: 1000px) {
-  @-webkit-keyframes cloudMove {
-    0% {
-      transform: translateX(-5rem);
-    }
-    100% {
-      transform: translateX(68vw);
-    }
-  }
   @keyframes cloudMove {
     0% {
       transform: translateX(-5rem);
@@ -246,14 +196,6 @@
   }
 }
 @media only screen and (max-width: 768px) {
-  @-webkit-keyframes cloudMove {
-    0% {
-      transform: translateX(-5rem);
-    }
-    100% {
-      transform: translateX(50vw);
-    }
-  }
   @keyframes cloudMove {
     0% {
       transform: translateX(-5rem);

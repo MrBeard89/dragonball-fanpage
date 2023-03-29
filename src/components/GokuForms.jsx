@@ -107,15 +107,12 @@ const GokuForms = () => {
   ]
   const handleChange = (selectedOption) => {
     setSelected(selectedOption)
-    console.log(`Option selected:`, selectedOption)
   }
   return (
     <>
       <div className='gokuforms_wrapper'>
         <div className='gokuforms_wrapper_line'></div>
-        <h3 className='gokuforms_wrapper_title'>
-          Some info about Goku's Legendary Forms
-        </h3>
+        <h3 className='gokuforms_wrapper_title'>Some info about Goku's Legendary Forms</h3>
         <div className='gokuforms_container'>
           <div className='gokuforms_img_conatiner'>
             <img
@@ -135,9 +132,7 @@ const GokuForms = () => {
               classNamePrefix='react-select'
               styles={customStyles}
             />
-            <div className='gokuforms_text_info'>
-              {selected && <>{selected.Description}</>}
-            </div>
+            <div className='gokuforms_text_info'>{selected && <>{selected.Description}</>}</div>
           </div>
         </div>
       </div>
